@@ -1,35 +1,31 @@
-import React from 'react'
+import React from 'react';
+import pic from "../images/cafe6.jpg";
+import './Main.css';
 
 const Main = () => {
   return (
     <main role="main">
-
-      {/*<!-- Main jumbotron for a primary marketing message or call to action -->*/}
-      <div className="jumbotron">
-        <div className="container">
-          <h1 className="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-        </div>
-      </div>
-
       <div className="container">
         {/*<!-- Example row of columns -->*/}
+        <div className='mainPicture'>
+          <img src={pic} class="img-fluid" alt="..."></img>
+        </div>
         <div className="row">
           <div className="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a className="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>メニュー</h2>
+            <p>ハンドドリップで淹れた引きたての薫り高いコーヒーが当店の自慢のメニュー。コーヒーは一粒一粒丁寧に厳選した豆を使用、焙煎も行っています。手作りケーキと共に是非お召し上がりください。沖縄の熱い
+              夏は氷ぜんざい、寒い冬はホットぜんざいなど、季節によって楽しめる商品も当店の人気商品のひとつです。</p>
+            <p>メニューを見る</p>
           </div>
           <div className="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a className="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>場所</h2>
+            <p>国際通り旧三越前の平和通り商店街入口で創業。現在あるたくさんのカフェや喫茶店の先駆けとなる戦後沖縄を沖縄を象徴する喫茶店として、長い間皆さまに愛されてきました。クラシック音楽を聞きながら、当店自慢のコーヒーを片手に皆さまも日常の喧騒から離れ、のんびりおくつろぎください。</p>
+            <p>Googleマップで場所を確認する</p>
           </div>
           <div className="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a className="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <h2>ギフト</h2>
+            <p>お歳暮やお中元、出産祝いや季節のご挨拶などに当店自慢の自家焙煎コーヒーはいかがですか？一粒一粒大切に焙煎された薫り高いコーヒーは、日ごろお世話になっている方への贈り物にぴったりです。コーヒー豆の入荷状況もございますので、一か月前のご注文から承っております。コーヒーの好みなど、お気軽にご相談ください。</p>
+            <p>自家焙煎コーヒーを注文する</p>
           </div>
         </div>
 
