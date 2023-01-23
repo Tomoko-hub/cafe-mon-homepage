@@ -1,4 +1,7 @@
 import React from 'react'
+import Drinks from './menu/Drinks'
+import Foods from './menu/Foods'
+import Espresso from './menu/Espresso'
 
 const Navbar = () => {
   return (
@@ -11,12 +14,15 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
+                    <Drinks />
                     <a className="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li className="nav-item">
+                    <Foods />
                     <a className="nav-link" href="#">Features</a>
                     </li>
                     <li className="nav-item">
+                    <Espresso />
                     <a className="nav-link" href="#">Pricing</a>
                     </li>
                     <li className="nav-item dropdown">
