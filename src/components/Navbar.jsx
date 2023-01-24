@@ -2,6 +2,7 @@ import React from 'react'
 import Drinks from './menu/Drinks'
 import Foods from './menu/Foods'
 import Espresso from './menu/Espresso'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -14,18 +15,11 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <Drinks />
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <Link to="/drinks">Drinks</Link>
+                        <Link to="/foods">Foods</Link>
+                        <Link to="espresso">Espressso</Link>
                     </li>
-                    <li className="nav-item">
-                    <Foods />
-                    <a className="nav-link" href="#">Features</a>
-                    </li>
-                    <li className="nav-item">
-                    <Espresso />
-                    <a className="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li className="nav-item dropdown">
+                    {/*<li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown link
                     </a>
@@ -34,7 +28,7 @@ const Navbar = () => {
                         <li><a className="dropdown-item" href="#">Another action</a></li>
                         <li><a className="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    </li>
+                    </li>*/}
                 </ul>
             </div>
         </div>
