@@ -1,6 +1,5 @@
 import React from 'react';
 import pic from "../images/cafe6.jpg";
-import './Main.css';
 
 const Main = () => {
   return (
@@ -8,7 +7,7 @@ const Main = () => {
       <div className="container">
         {/*<!-- Example row of columns -->*/}
         <div className='mainPicture'>
-          <img src={pic} class="img-fluid" alt="..."></img>
+          <img src={pic} className="img-fluid" alt="..."></img>
         </div>
         <div className="row">
           <div className="col-md-4">

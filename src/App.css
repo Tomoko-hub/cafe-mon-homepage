@@ -1,0 +1,12 @@
+* {
+    background-color: #e0d9d2;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
